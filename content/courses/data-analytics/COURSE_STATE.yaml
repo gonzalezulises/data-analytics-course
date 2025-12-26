@@ -4,9 +4,9 @@
 
 meta:
   course_id: data-analytics
-  last_updated: "2025-12-25"
-  last_module_completed: null  # Ninguno completado aún
-  total_exercises_created: 0
+  last_updated: "2025-12-26"
+  last_module_completed: module-01
+  total_exercises_created: 12
   migration_status: "in_progress"
 
 # ============================================================================
@@ -255,97 +255,160 @@ datasets:
 # REGISTRO DE EJERCICIOS (se llena conforme se crean)
 # ============================================================================
 
-exercises_registry: {}
-  # Ejemplo de cómo se llena:
-  # ex-01-01-hello-world:
-  #   module: module-01
-  #   concepts: [print, strings]
-  #   variables_created: []
-  #   depends_on: []
-  #   status: completed
+exercises_registry:
+  ex-01-01-hello-world:
+    module: module-01
+    concepts: [print]
+    difficulty: beginner
+    status: completed
+
+  ex-01-02-variables:
+    module: module-01
+    concepts: [variables_y_tipos]
+    difficulty: beginner
+    status: completed
+
+  ex-01-03-tipos-datos:
+    module: module-01
+    concepts: [int, float, str, bool]
+    difficulty: beginner
+    status: completed
+
+  ex-01-04-operaciones:
+    module: module-01
+    concepts: [operadores_aritmeticos]
+    difficulty: beginner
+    status: completed
+
+  ex-01-05-strings:
+    module: module-01
+    concepts: [strings_y_formato]
+    difficulty: beginner
+    status: completed
+
+  ex-01-06-listas-crear:
+    module: module-01
+    concepts: [listas]
+    difficulty: beginner
+    status: completed
+
+  ex-01-07-listas-acceso:
+    module: module-01
+    concepts: [listas, indexing, slicing]
+    difficulty: beginner
+    status: completed
+
+  ex-01-08-diccionarios:
+    module: module-01
+    concepts: [diccionarios]
+    difficulty: beginner
+    status: completed
+
+  ex-01-09-if-else:
+    module: module-01
+    concepts: [control_de_flujo_if]
+    difficulty: intermediate
+    status: completed
+
+  ex-01-10-for-loop:
+    module: module-01
+    concepts: [bucles_for_while]
+    difficulty: intermediate
+    status: completed
+
+  ex-01-11-while-loop:
+    module: module-01
+    concepts: [bucles_for_while]
+    difficulty: intermediate
+    status: completed
+
+  ex-01-12-funciones:
+    module: module-01
+    concepts: [funciones_basicas]
+    difficulty: intermediate
+    status: completed
 
 # ============================================================================
 # ESPECIFICACIÓN DEL PRÓXIMO MÓDULO A CREAR
 # ============================================================================
 
 next_module_spec:
-  id: module-01
-  title: "Introducción a Python"
+  id: module-02
+  title: "Obtención de Datos con Pandas"
   
-  prerequisites_from_previous: []
-  
-  new_concepts_to_introduce:
+  prerequisites_from_previous:
     - variables_y_tipos
-    - operadores_aritmeticos
-    - strings_y_formato
     - listas_y_diccionarios
-    - control_de_flujo_if
     - bucles_for_while
     - funciones_basicas
   
+  new_concepts_to_introduce:
+    - import_pandas_as_pd
+    - read_csv_read_excel
+    - dataframe_basico
+    - series_basica
+    - head_tail_shape
+    - dtypes_info
+    - seleccion_columnas
+    - seleccion_filas_iloc_loc
+  
   exercises_planned:
-    - id: ex-01-01-hello-world
-      title: "Tu primer programa"
-      concepts: [print]
+    - id: ex-02-01-import-pandas
+      title: "Importar Pandas"
+      concepts: [import_pandas_as_pd]
       difficulty: beginner
       
-    - id: ex-01-02-variables
-      title: "Crear variables"
-      concepts: [variables_y_tipos]
+    - id: ex-02-02-read-csv
+      title: "Leer archivo CSV"
+      concepts: [read_csv]
       difficulty: beginner
       
-    - id: ex-01-03-tipos-datos
-      title: "Tipos de datos"
-      concepts: [int, float, str, bool]
+    - id: ex-02-03-explorar-df
+      title: "Explorar un DataFrame"
+      concepts: [dataframe_basico]
       difficulty: beginner
       
-    - id: ex-01-04-operaciones
-      title: "Operaciones aritméticas"
-      concepts: [operadores_aritmeticos]
+    - id: ex-02-04-head-tail
+      title: "Ver primeras y últimas filas"
+      concepts: [head_tail_shape]
       difficulty: beginner
       
-    - id: ex-01-05-strings
-      title: "Trabajando con texto"
-      concepts: [strings_y_formato]
+    - id: ex-02-05-shape-dtypes
+      title: "Dimensiones y tipos"
+      concepts: [shape, dtypes]
       difficulty: beginner
       
-    - id: ex-01-06-listas-crear
-      title: "Crear listas"
-      concepts: [listas]
+    - id: ex-02-06-seleccion-columnas
+      title: "Seleccionar columnas"
+      concepts: [seleccion_columnas]
       difficulty: beginner
       
-    - id: ex-01-07-listas-acceso
-      title: "Acceder a elementos"
-      concepts: [listas, indexing]
-      difficulty: beginner
-      
-    - id: ex-01-08-diccionarios
-      title: "Diccionarios básicos"
-      concepts: [diccionarios]
-      difficulty: beginner
-      
-    - id: ex-01-09-if-else
-      title: "Decisiones con if-else"
-      concepts: [control_de_flujo_if]
+    - id: ex-02-07-iloc-loc
+      title: "Selección con iloc y loc"
+      concepts: [iloc, loc]
       difficulty: intermediate
       
-    - id: ex-01-10-for-loop
-      title: "Bucles for"
-      concepts: [bucles_for_while]
+    - id: ex-02-08-filtrado-basico
+      title: "Filtrar filas"
+      concepts: [filtrado]
       difficulty: intermediate
       
-    - id: ex-01-11-while-loop
-      title: "Bucles while"
-      concepts: [bucles_for_while]
-      difficulty: intermediate
+    - id: ex-02-09-read-excel
+      title: "Leer archivo Excel"
+      concepts: [read_excel]
+      difficulty: beginner
       
-    - id: ex-01-12-funciones
-      title: "Tu primera función"
-      concepts: [funciones_basicas]
+    - id: ex-02-10-crear-dataframe
+      title: "Crear DataFrame desde diccionario"
+      concepts: [dataframe_basico]
       difficulty: intermediate
 
-  estimated_exercises: 12
-  estimated_lessons: 5
+  estimated_exercises: 10
+  estimated_lessons: 4
+  
+  datasets_required:
+    - drinks.csv
+    - movies.csv
 
 # ============================================================================
 # ESTILO PEDAGÓGICO - MANTENER CONSISTENTE

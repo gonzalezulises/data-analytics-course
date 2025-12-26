@@ -7,7 +7,7 @@ Este documento rastrea todas las tareas necesarias para migrar el curso de Data 
 | Fase | Descripción | Tareas | Completadas | Estado |
 |------|-------------|--------|-------------|--------|
 | 1 | Estructura base | 5 | 5 | ✅ Completada |
-| 2 | Módulo 1 - Python | 8 | 0 | 🔲 Pendiente |
+| 2 | Módulo 1 - Python | 8 | 8 | ✅ Completada |
 | 3 | Módulos 2-4 | 12 | 0 | 🔲 Pendiente |
 | 4 | Módulos 5-8 | 12 | 0 | 🔲 Pendiente |
 | 5 | Base de datos | 4 | 0 | 🔲 Pendiente |
@@ -27,47 +27,47 @@ Este documento rastrea todas las tareas necesarias para migrar el curso de Data 
 
 ---
 
-## Fase 2: Módulo 1 - Introducción a Python 🔲
+## Fase 2: Módulo 1 - Introducción a Python ✅
 
 ### Lecciones (5 archivos .md)
 
-- [ ] #6 Crear `lessons/01-primeros-pasos.md`
+- [x] #6 Crear `lessons/01-primeros-pasos.md`
   - Contenido: print, comentarios, primera ejecución
   - Embeds: ex-01-01-hello-world, ex-01-02-variables
 
-- [ ] #7 Crear `lessons/02-tipos-datos.md`
+- [x] #7 Crear `lessons/02-tipos-datos.md`
   - Contenido: int, float, str, bool, operadores
   - Embeds: ex-01-03, ex-01-04, ex-01-05
 
-- [ ] #8 Crear `lessons/03-colecciones.md`
+- [x] #8 Crear `lessons/03-colecciones.md`
   - Contenido: listas, diccionarios, indexing
   - Embeds: ex-01-06, ex-01-07, ex-01-08
 
-- [ ] #9 Crear `lessons/04-control-flujo.md`
+- [x] #9 Crear `lessons/04-control-flujo.md`
   - Contenido: if/elif/else, for, while
   - Embeds: ex-01-09, ex-01-10, ex-01-11
 
-- [ ] #10 Crear `lessons/05-funciones.md`
+- [x] #10 Crear `lessons/05-funciones.md`
   - Contenido: def, parámetros, return
   - Embeds: ex-01-12
 
 ### Ejercicios (12 archivos .yaml)
 
-- [ ] #11 Crear ejercicio `ex-01-01-hello-world.yaml`
+- [x] #11 Crear ejercicio `ex-01-01-hello-world.yaml`
   ```yaml
   type: code-python
   difficulty: beginner
   concepts: [print]
   ```
 
-- [ ] #12 Crear ejercicio `ex-01-02-variables.yaml`
+- [x] #12 Crear ejercicio `ex-01-02-variables.yaml`
   ```yaml
   type: code-python
   difficulty: beginner
   concepts: [variables, asignacion]
   ```
 
-- [ ] #13 Crear ejercicios `ex-01-03` a `ex-01-12`
+- [x] #13 Crear ejercicios `ex-01-03` a `ex-01-12`
   - 03: Tipos de datos
   - 04: Operaciones aritméticas
   - 05: Strings y formato
@@ -80,6 +80,7 @@ Este documento rastrea todas las tareas necesarias para migrar el curso de Data 
   - 12: Funciones
 
 **Tiempo estimado:** 4-6 horas  
+**Tiempo real:** ~1 hora (con Claude Code)
 **Dependencias:** Ninguna
 
 ---
