@@ -44,3 +44,5 @@ venv/
 
 # Local config (no subir)
 CLAUDE.local.md
+.vercel
+.claude/
